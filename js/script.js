@@ -18,3 +18,9 @@ $('#addElement').keydown(function(e) {
         }
     }
 });
+
+//Elimino la voce al click su done
+$('.todo-list').on('click', '#removeItem', (function() {
+    $(this).parent().remove();
+}));
+
